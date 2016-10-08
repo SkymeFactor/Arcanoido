@@ -189,7 +189,7 @@ namespace Game2
                         Player1.Timer--;
                     else Player1.Skill = 0;
                 }
-                if (Player2.Skill == 3 || Player1.Skill == 4)
+                if (Player2.Skill == 3 || Player2.Skill == 4)
                 {
                     if (Player2.Timer > 0)
                         Player2.Timer--;
@@ -372,7 +372,7 @@ namespace Game2
                 if (Player1.Skill == 2 || Player2.Skill == 2)
                     spriteBatch.Draw(sprBall, new Vector2(Ball.Pose.X,
                         Window.ClientBounds.Height / 2 - (Ball.Pose.Y - Window.ClientBounds.Height / 2)), Color.White);
-                if (Player1.Skill == 4)
+                if (Player2.Skill == 4)
                     spriteBatch.Draw(sprBox, new Vector2(Window.ClientBounds.Width - 8, 0), null, Color.Green, 0, Vector2.Zero, 10, SpriteEffects.None, 0);
                 if (Player1.Skill == 4)
                     spriteBatch.Draw(sprBox, new Vector2(-10 * sprBox.Width + 8, 0), null, Color.Green, 0, Vector2.Zero, 10, SpriteEffects.None, 0);
